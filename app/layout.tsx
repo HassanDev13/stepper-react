@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+
+import { Tajawal } from 'next/font/google'
+ 
+// If loading a variable font, you don't need to specify the font weight
+const tajawal = Tajawal({
+  weight : "200",
+  subsets : ["arabic"]
+})
+
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${tajawal.className} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

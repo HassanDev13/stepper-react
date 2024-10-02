@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import { Button } from "@/components/ui/button";
 import Stepper from "@/components/ui/stepper";
 import React from "react";
-
+import Image from "next/image";
 interface Step {
   number: number;
   label: string;
@@ -40,26 +40,34 @@ export default function Home() {
   };
 
   return (
-    <div className="w-screen h-screen   mx-auto p-4 ">
-      <h1 className="f">Stepper Example</h1>
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="w-full md:w-[40%] mx-auto p-4 space-y-6">
+      <div className="flex justify-center">
+        <Image src="/me.png" width={150} height={150} alt="hacene" />
+      </div>
+      <div className="space-y-4 text-center">
+        <h1 className="font-bold text-3xl">Stepper Example</h1>
+        <h1 className="font-normal text-2xl">React - Shadcn</h1>
+      </div>
       <Stepper
         steps={steps}
         currentStep={currentStep}
         onStepClick={handleStepClick}
       />
-   
+
       <div className="mt-8 flex justify-between">
         <Button onClick={handleNext} disabled={currentStep === 9}>
-          التالي
+        التالي
         </Button>
 
         <Button
-          onClick={handlePrev}
-          variant="secondary"
-          disabled={currentStep === 1}
+        onClick={handlePrev}
+        variant="secondary"
+        disabled={currentStep === 1}
         >
-          السابق
+        السابق
         </Button>
+      </div>
       </div>
     </div>
   );
