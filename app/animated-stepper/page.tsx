@@ -3,8 +3,8 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import Image from "next/image";
-import AnimatedStepper from "@/components/AnimatedStepper";
 import Link from "next/link";
+import Stepper from "@/components/ui/stepper";
 interface Step {
   number: number;
   label: string;
@@ -50,14 +50,14 @@ export default function Home() {
         <h1 className="font-bold text-3xl">Stepper Example</h1>
         <h1 className="font-normal text-2xl">React - Shadcn</h1>
       </div>
-      <AnimatedStepper
+      <Stepper
         steps={steps}
         currentStep={currentStep}
         onStepClick={handleStepClick}
       />
 
       <div className="mt-8 flex justify-between select-none">
-        <Button onClick={handleNext} disabled={currentStep === 9}>
+        <Button  onClick={handleNext} disabled={currentStep === 9}>
         التالي
         </Button>
 
@@ -69,7 +69,7 @@ export default function Home() {
         السابق
         </Button>
       </div>
-      <Link  href={'/animated-stepper'} className="select-none text-foreground text-xs hover:text-zinc-800">see our Animated version</Link>
+      <Link  href={'/'} className="select-none text-foreground text-xs hover:text-zinc-800">see our Original version</Link>
       </div>
     </div>
   );
