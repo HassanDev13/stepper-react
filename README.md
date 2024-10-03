@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stepper Component with Shadcn
 
-## Getting Started
+This project implements a stepper component using [Shadcn](https://shadcn.dev/) and is deployed on [Vercel](https://vercel.com). The stepper allows users to navigate through multiple steps in a form-like interface. 
 
-First, run the development server:
+## Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Check out the live demo: [View Demo](https://stepper-react.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Shadcn](https://shadcn.dev/) for UI components
+- [Vercel](https://vercel.com) for deployment
+- [React](https://reactjs.org/) for building the component
+- [Tailwind CSS](https://tailwindcss.com/) for styling
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Improvements
 
-## Learn More
+Here are some features and improvements planned for future updates:
 
-To learn more about Next.js, take a look at the following resources:
+- **Vertical Stepper**: Currently, the stepper is horizontal. A vertical version is planned to allow for more flexibility in UI design.
+- **Step Validation**: Implement step validation logic to ensure users complete required fields before moving to the next step.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to open issues or contribute to these improvements!
