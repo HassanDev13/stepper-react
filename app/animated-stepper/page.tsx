@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Stepper from "@/components/ui/stepper";
 import AnimatedStepper from "@/components/AnimatedStepper";
 interface Step {
   number: number;

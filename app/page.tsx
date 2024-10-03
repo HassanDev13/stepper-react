@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import Image from "next/image";
-import AnimatedStepper from "@/components/AnimatedStepper";
 import Link from "next/link";
 import Stepper from "@/components/ui/stepper";
 interface Step {
