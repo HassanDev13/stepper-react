@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Stepper from "@/components/ui/stepper";
+import AnimatedStepper from "@/components/AnimatedStepper";
 interface Step {
   number: number;
   label: string;
@@ -50,7 +51,7 @@ export default function Home() {
         <h1 className="font-bold text-3xl">Stepper Example</h1>
         <h1 className="font-normal text-2xl">React - Shadcn</h1>
       </div>
-      <Stepper
+      <AnimatedStepper
         steps={steps}
         currentStep={currentStep}
         onStepClick={handleStepClick}
